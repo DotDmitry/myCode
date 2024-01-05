@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /*  * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        } */
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        ol,
+        ul {
+            margin: 20px;
+        }
+
+        #nav li {
+            background-color: blue;
+            display: inline-block;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+
+        <thead>
+            <tr>
+                <th>One</th>
+                <th>Two</th>
+                <th>Three</th>
+            </tr>
+        </thead>
+        <tbody>
+            <colgroup>
+                <col span="1" style="background-color: aquamarine;">
+                <col span="2" style="background-color: red;">
+            </colgroup>
+            <tr>
+                <td colspan="2">One</td>
+                <td>Two</td>
+
+            </tr>
+            <tr>
+                <td rowspan="2">One</td>
+                <td>Two</td>
+                <td>Three</td>
+            </tr>
+            <tr>
+
+                <td>Two</td>
+                <td>Three</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+        <caption>
+            MY TAB
+        </caption>
+    </table>
+    <ol type="1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>
+            <ol type="1">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+
+            </ol>
+        </li>
+
+    </ol>
+    <ul id="nav" type="square">
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        
+    </ul>
+    <span>Hello</span>
+    <dl>
+        <dt>aples
+            <dd>Golden</dd>
+        </dt>
+        
+        <dt>Banans
+            <dd>xxx</dd>
+        </dt>
+        
+    </dl>
+</body>
+
+</html>

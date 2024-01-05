@@ -1,0 +1,33 @@
+body {
+    background-color: lavenderblush;
+}
+
+div p {
+    color: red;
+}
+
+div>p {
+    background-color: blueviolet;
+}
+
+div ~ p{
+    text-decoration:underline dotted;
+}
+div + p{
+    color: lime;
+}
+
+div p:first-child{
+    border: 2px solid ;
+}
+p:nth-child(3){
+    border: 3px blue double;
+}
+.last::before,
+.last::after{
+    content: '***';
+
+}
+p:lang(ee){
+    display: none;
+}

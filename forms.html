@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        #hello {
+            color: green;
+        }
+
+        .one {
+            color: blue;
+        }
+
+        .two {
+            color: lime;
+        }
+        textarea{
+            resize: vertical;
+            overflow-y:scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" >
+        <fieldset>
+            <legend>Data</legend>
+    <!--   <label for="user-login">User</label>
+        <input id="user-login" type="text" placeholder="User" value="Dima" list="datalist" name="user-login"><br>
+        <label for="user-pass">Password</label>
+        <input type="password" name="user-pass" id="user-pass"><br>
+        <label for="user-email">email</label>
+        <input type="email" name="user-email" id="user-email"><br> 
+        <select name="select" id="select" size="3" multiple>
+            <optgroup label="AB">
+                <option value="100">BMW</option>
+                <option value="200">Audi</option>
+            </optgroup>
+            <optgroup style="background-color: lime;" label="FT">
+                <option value="300">Ford</option>
+                <option value="400">Tesla</option>
+            </optgroup>         
+        </select><br>
+        <datalist id="datalist">
+            <option value="300">Ford</option>
+                <option value="400">Tesla</option>
+
+        </datalist>
+        <textarea name="textarea" id="" cols="10" rows="10"></textarea> -->
+    <input type="number" name="number" id="">
+    <input type="range" name="range"min="2" max="10" >
+    </fieldset>
+    <label for="checkboxId"><input type="checkbox" name="checkbox" id="checkboxId">Yes</label>
+       <input type="radio" name="radio" id="" value=""><br>
+       <input type="radio" name="radio" id="" value=""><br>
+       <input type="radio" name="radio" id="" value=""><br>
+       <input type="radio" name="radio" checked id=""  value=""><br>
+       <input type="color" name="color" id=""><br>
+       <input type="datetime-local" name="date" id=""><br>
+       <input type="datetime" name="date" id=""><br>
+       <input type="file" name="file" id="">
+    
+    <input type="submit">
+        <button type="submit">Click</button>
+    </form>
+</body>
+
+</html>

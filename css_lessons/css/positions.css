@@ -1,0 +1,57 @@
+h1{
+    /* display: none; */
+    visibility: hidden;
+}
+h2{
+
+}
+body{
+    height: 2000px;
+}
+div.static{
+    position: static;
+    border: 2px solid blue;
+    width: 200px;
+}
+div.relative{
+    position: relative;
+    border: 2px solid red;
+    width: 200px;
+    top: 200px;
+}
+
+section{
+    height: 500px;
+    background-color: brown;
+}
+
+div.fixed{
+    position: fixed;
+    border: 2px solid yellowgreen;
+    width: 200px;
+    bottom: 200px;
+}
+
+div.absolute{
+    position: absolute;
+    border: 2px solid magenta;
+    width: 200px;
+    bottom: 50px;
+    right: 30px;
+}
+
+div.sticky{
+    position: sticky;
+    border: 2px solid green;
+    width: 200px;
+   top: 20px;
+}
+
+.part2{
+    background-color: aquamarine;
+}
+.part2 div{
+    display: inline-block;
+    width: 50%;
+    border:1px solid black;
+}

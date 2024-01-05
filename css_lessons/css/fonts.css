@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Robo";
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+h1{
+    font-family: 'Rubik Doodle Shadow',  sans-serif;
+    text-shadow: 2px 2px red;
+}
+p{
+    text-align: center;
+    word-spacing: 20px;
+    font-family:"Robo";
+    
+}
+p.j{
+width: 300px;
+    text-align: justify;
+    text-align-last: end ;
+    letter-spacing: 5px;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+span.sub{
+    vertical-align: sub;
+}
+span.super{
+    vertical-align: super;
+}
