@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px sold red;
+            margin: auto;
+        }
+
+        .box1 {
+            width: 500px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: magenta;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        <div class="box box2">
+            <button class="btn">click</button>
+            <a href="" class="btn2">click</a>
+        </div>
+    </div>
+    <div class="car-list">
+        <ul id="cars">
+            <li id="1">100</li>
+            <li id="2">200</li>
+            <li id="3">300</li>
+            <li id="4">400</li>
+            <li id="5">500</li>
+        </ul>
+
+    </div>
+    <script>
+        /*  let button = document.querySelector(".btn");
+         let button2 = document.querySelector(".btn2");
+         let box1 = document.querySelector(".box1");
+         let box2 = document.querySelector(".box2");
+         window.addEventListener('click', () => {
+             console.log('window');
+         }, true);
+         document.addEventListener('click', () => {
+             console.log('document');
+         }, true);
+ 
+         box1.addEventListener('click', () => {
+             console.log('box1');
+         }, { once: true });
+         box2.addEventListener('click', () => {
+             console.log('box2');
+         }, true);
+         button.addEventListener('click', () => {
+             console.log('button');
+         }, true);
+ 
+ 
+         button2.addEventListener('click', (e) => {
+             e.preventDefault();
+             console.log(e.target.innerText = 'clicked');
+         }, false);
+  */
+        document.querySelector("#cars").addEventListener('click', (e) => {
+
+            console.log(e.target.getAttribute('id') + 'clicked');
+
+            let target = e.target;
+            if (target.matches('li')) {
+                target.style.backgroundColor = 'grey';
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div.container, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            max-width: 600px;
+            margin:auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-heading">Hello</h1>
+        <ul>
+            <li class="list-item">100</li>
+            <li class="list-item">200</li>
+            <li class="list-item">300</li>
+            <li class="list-item">400</li>
+            <li class="list-item">500</li>
+        </ul>
+    </div>
+    <button class="btn-1">Button</button>
+    <script>
+        //const title=document.getElementById('main-heading');
+        const title=document.querySelector('#main-heading');
+
+        //let items=document.getElementsByClassName('list-item');
+        //let items=document.getElementsByTagName('li');
+        let items = document.querySelectorAll('.list-item');
+
+        title.style.color='red';
+
+
+const ul=document.querySelector('ul');
+const li=document.createElement('li');
+
+ul.append(li);
+
+const button=document.querySelector('.btn-1');
+button.addEventListener('click',()=>{console.log('hello');});
+
+
+
+
+
+
+        console.log(items);
+        console.log(typeof items);
+
+
+    </script>
+</body>
+</html>
